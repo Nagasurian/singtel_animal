@@ -5,9 +5,11 @@ import com.singtel.animal.group.Bird;
 import com.singtel.animal.group.Fish;
 import com.singtel.animal.type.Cat;
 import com.singtel.animal.type.Chicken;
+import com.singtel.animal.type.ClownFish;
 import com.singtel.animal.type.Dog;
 import com.singtel.animal.type.Duck;
 import com.singtel.animal.type.Parrot;
+import com.singtel.animal.type.Shark;
 import com.singtel.enums.Gender;
 
 public class Solution {
@@ -53,13 +55,29 @@ public class Solution {
 		Animal cat = new Cat();
 		parrot.livesWith(cat);
 		parrot.makeSound();
-		
+
 		System.out.println();
 
 		// B. Ques 1 No sing and walk methods for fish
 		System.out.println("B. Ques 1");
 		Fish fish = new Fish();
 		fish.swim();
+
+		System.out.println();
+
+		System.out.println("B. Ques 2");
+
+		Fish shark = new Shark();
+		shark.size();
+		shark.color();
+
+		ClownFish clownfish = new ClownFish();
+		clownfish.size();
+		clownfish.color();
+		clownfish.joke();
+
+		Shark bigShark = new Shark();
+		bigShark.eat(fish);
 
 	}
 }

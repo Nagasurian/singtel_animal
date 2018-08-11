@@ -1,5 +1,6 @@
 package com.singtel.animal;
 
+import com.singtel.animal.action.IEat;
 import com.singtel.animal.action.ISound;
 
 /**
@@ -7,7 +8,7 @@ import com.singtel.animal.action.ISound;
  * 
  * @author Suria
  */
-public class Animal implements ISound {
+public class Animal implements ISound, IEat {
 
 	protected AnimalAttr attr;
 
@@ -39,6 +40,14 @@ public class Animal implements ISound {
 		} else {
 			System.out.println(this.attr.getSound());
 		}
+	}
+
+	public void color() {
+		System.out.println(this.attr.getColor());
+	}
+
+	public void size() {
+		System.out.println(this.attr.getSize());
 	}
 
 	public String getSound() {
