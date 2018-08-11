@@ -3,6 +3,7 @@ package com.singtel.animal.test;
 import com.singtel.animal.Animal;
 import com.singtel.animal.group.Bird;
 import com.singtel.animal.group.Fish;
+import com.singtel.animal.type.Butterfly;
 import com.singtel.animal.type.Cat;
 import com.singtel.animal.type.Chicken;
 import com.singtel.animal.type.ClownFish;
@@ -79,12 +80,21 @@ public class Solution {
 
 		Shark bigShark = new Shark();
 		bigShark.eat(fish);
-		
+
 		System.out.println();
 
 		System.out.println("B. Ques 3");
 
 		Dolphin dolphin = new Dolphin();
 		dolphin.swim();
+
+		System.out.println();
+
+		System.out.println("D. Ques 1");
+
+		Butterfly butterfly = new Butterfly();
+		butterfly.fly();
+		butterfly.makeSound();
+
 	}
 }
