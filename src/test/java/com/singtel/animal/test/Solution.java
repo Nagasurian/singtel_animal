@@ -12,6 +12,7 @@ import com.singtel.animal.type.Dolphin;
 import com.singtel.animal.type.Duck;
 import com.singtel.animal.type.Parrot;
 import com.singtel.animal.type.Shark;
+import com.singtel.enums.ButterflyMetamorphosis;
 import com.singtel.enums.Gender;
 
 public class Solution {
@@ -95,6 +96,13 @@ public class Solution {
 		Butterfly butterfly = new Butterfly();
 		butterfly.fly();
 		butterfly.makeSound();
+
+		System.out.println();
+
+		System.out.println("D. Ques 2");
+		butterfly.isAt(ButterflyMetamorphosis.CATERPILLAR);
+		butterfly.fly();
+		butterfly.walk();
 
 	}
 }
