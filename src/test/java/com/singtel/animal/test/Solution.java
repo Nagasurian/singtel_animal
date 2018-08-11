@@ -7,6 +7,7 @@ import com.singtel.animal.type.Cat;
 import com.singtel.animal.type.Chicken;
 import com.singtel.animal.type.ClownFish;
 import com.singtel.animal.type.Dog;
+import com.singtel.animal.type.Dolphin;
 import com.singtel.animal.type.Duck;
 import com.singtel.animal.type.Parrot;
 import com.singtel.animal.type.Shark;
@@ -78,6 +79,12 @@ public class Solution {
 
 		Shark bigShark = new Shark();
 		bigShark.eat(fish);
+		
+		System.out.println();
 
+		System.out.println("B. Ques 3");
+
+		Dolphin dolphin = new Dolphin();
+		dolphin.swim();
 	}
 }
