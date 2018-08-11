@@ -2,11 +2,12 @@ package com.singtel.animal.type;
 
 import com.singtel.animal.group.Bird;
 import com.singtel.enums.Gender;
+import com.singtel.util.Utility;
 
 public class Chicken extends Bird {
 
 	private String sound = "Cluck, cluck";
-	private String roosterSound = "Cock-a-doodle-doo";
+	private String roosterSound = Utility.getLabel("sound");
 
 	public Chicken() {
 		super.attr.setSound(sound);

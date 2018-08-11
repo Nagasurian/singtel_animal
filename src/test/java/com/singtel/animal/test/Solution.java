@@ -14,6 +14,7 @@ import com.singtel.animal.type.Parrot;
 import com.singtel.animal.type.Shark;
 import com.singtel.enums.ButterflyMetamorphosis;
 import com.singtel.enums.Gender;
+import com.singtel.util.Utility;
 
 public class Solution {
 
@@ -139,5 +140,12 @@ public class Solution {
 		System.out.println("Total animals can swim " + swimCounter);
 		System.out.println("Total animals can sing " + singCounter);
 
+		System.out.println();
+
+		System.out.println("Bonus. Ques 1");
+		
+		Utility.setLang("ru", "RU");
+		Bird russianRooster = new Chicken(Gender.MALE);
+		russianRooster.makeSound();
 	}
 }
