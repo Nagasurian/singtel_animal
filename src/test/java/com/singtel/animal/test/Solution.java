@@ -53,11 +53,17 @@ public class Solution {
 		// A. Ques 4
 		System.out.println("A. Ques 4");
 		Parrot parrot = new Parrot();
+		
 		Animal dog = new Dog();
 		parrot.livesWith(dog);
 		parrot.makeSound();
+		
 		Animal cat = new Cat();
 		parrot.livesWith(cat);
+		parrot.makeSound();
+		
+		Animal rster = new Chicken(Gender.MALE);
+		parrot.livesWith(rster);
 		parrot.makeSound();
 
 		System.out.println();
