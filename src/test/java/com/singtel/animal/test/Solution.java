@@ -3,6 +3,7 @@ package com.singtel.animal.test;
 import com.singtel.animal.group.Bird;
 import com.singtel.animal.type.Chicken;
 import com.singtel.animal.type.Duck;
+import com.singtel.enums.Gender;
 
 public class Solution {
 
@@ -28,6 +29,13 @@ public class Solution {
 		Bird chicken = new Chicken();
 		chicken.makeSound();
 		chicken.fly();
+
+		System.out.println();
+
+		// A. Ques 3
+		System.out.println("A. Ques 3");
+		Bird rooster = new Chicken(Gender.MALE);
+		rooster.makeSound();
 
 	}
 }
