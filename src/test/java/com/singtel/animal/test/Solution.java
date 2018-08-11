@@ -2,6 +2,7 @@ package com.singtel.animal.test;
 
 import com.singtel.animal.Animal;
 import com.singtel.animal.group.Bird;
+import com.singtel.animal.group.Fish;
 import com.singtel.animal.type.Cat;
 import com.singtel.animal.type.Chicken;
 import com.singtel.animal.type.Dog;
@@ -52,6 +53,13 @@ public class Solution {
 		Animal cat = new Cat();
 		parrot.livesWith(cat);
 		parrot.makeSound();
+		
+		System.out.println();
+
+		// B. Ques 1 No sing and walk methods for fish
+		System.out.println("B. Ques 1");
+		Fish fish = new Fish();
+		fish.swim();
 
 	}
 }
