@@ -104,5 +104,40 @@ public class Solution {
 		butterfly.fly();
 		butterfly.walk();
 
+		System.out.println();
+
+		System.out.println("E. Ques 1");
+
+		Animal[] animals = new Animal[] { new Duck(), new Chicken(), new Parrot(), new Shark(), new ClownFish(),
+				new Dolphin(), new Dog(), new Butterfly(), new Cat() };
+
+		int walkCounter = 0;
+		int flyCounter = 0;
+		int singCounter = 0;
+		int swimCounter = 0;
+
+		for (Animal animal : animals) {
+			if (animal.canWalk()) {
+				walkCounter++;
+			}
+
+			if (animal.canFly()) {
+				flyCounter++;
+			}
+
+			if (animal.canSwim()) {
+				swimCounter++;
+			}
+
+			if (animal.canSing()) {
+				singCounter++;
+			}
+		}
+
+		System.out.println("Total animals can walk " + walkCounter);
+		System.out.println("Total animals can fly " + flyCounter);
+		System.out.println("Total animals can swim " + swimCounter);
+		System.out.println("Total animals can sing " + singCounter);
+
 	}
 }
